@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+
+    <!--    swiper js-->
+    <link rel="stylesheet" th:href="@{https://unpkg.com/swiper/swiper-bundle.css}">
+    <link rel="stylesheet" th:href="@{https://unpkg.com/swiper/swiper-bundle.min.css}">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script th:src="@{/js/controllers/my_swiper.js}"></script>
+</head>
+
+<body>
+<div class="root">
+    <th:block th:include="~{/fragments/header}"></th:block>
+
+    <th:block th:include="~{/fragments/side-nav}"></th:block>
+
+    <main>
+        <header class="main-header">
+            <h1 class="header-title">Watch Free Anime HD Videos</h1>
+        </header>
+
+        <th:block th:unless="${myList.isEmpty()}">
+            <section class="swiper-container">
+                <header class="swiper-header">
+                    <h2>My List</h2>
+                </header>
+
+                <div class="swiper-wrapper">
+                    <div th:each="anime : ${myList}" th:object="${anime}" class="swiper-slide">
+                        <div class="slide">
+                            <a th:href="@{/animes/{id}(id = *{id})}" class="anime-img-link">
+                                <img th:src="*{imageThumbnailUrl}" class="anime-img" alt="...">
+                            </a>
+
+                            <div class="anime-info">
+                                <a th:href="@{/animes/{id}(id = *{id})}"><h3 class="anime-title" th:text="*{name}"></h3>
+                                </a>
+                                <div class="likes-container">
+                                    <p class="anime-likes" th:text="*{likes}"></p>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
+        </th:block>
+
+        <section class="swiper-container">
+            <header class="swiper-header">
+                <h2>Most Popular</h2>
+                <a th:href="@{/animes/all(type = 'MOST_POPULAR', pageNumber = '1')}" class="view-all"><h2>All</h2></a>
+            </header>
+
+            <div class="swiper-wrapper">
+                <div th:each="anime : ${mostPopular}" th:object="${anime}" class="swiper-slide">
+                    <div class="slide">
+                        <a th:href="@{/animes/{id}(id = *{id})}" class="anime-img-link">
+                            <img th:src="*{imageThumbnailUrl}" class="anime-img" alt="...">
+                        </a>
+
+                        <div class="anime-info">
+                            <a th:href="@{/animes/{id}(id = *{id})}"><h3 class="anime-title" th:text="*{name}"></h3>
+                            </a>
+                            <div class="likes-container">
+                                <p class="anime-likes" th:text="*{likes}"></p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+
+        <section class="swiper-container">
+            <header class="swiper-header">
+                <h2>New Releases</h2>
+                <a th:href="@{/animes/all(type = 'NEW_RELEASES', pageNumber = '1')}" class="view-all"><h2>All</h2></a>
+            </header>
+
+            <div class="swiper-wrapper">
+                <div th:each="anime : ${newlyReleased}" th:object="${anime}" class="swiper-slide">
+                    <div class="slide">
+                        <a th:href="@{/animes/{id}(id = *{id})}" class="anime-img-link">
+                            <img th:src="*{imageThumbnailUrl}" class="anime-img" alt="...">
+                        </a>
+
+                        <div class="anime-info">
+                            <a th:href="@{/animes/{id}(id = *{id})}"><h3 class="anime-title" th:text="*{name}"></h3>
+                            </a>
+                            <div class="likes-container">
+                                <p class="anime-likes" th:text="*{likes}"></p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+
+        <section class="swiper-container">
+            <header class="swiper-header">
+                <h2>Random</h2>
+                <a th:href="@{/animes/all(type = 'RANDOMIZED', pageNumber = '1')}" class="view-all"><h2>All</h2></a>
+            </header>
+
+            <div class="swiper-wrapper">
+                <div th:each="anime : ${random}" th:object="${anime}" class="swiper-slide">
+                    <div class="slide">
+                        <a th:href="@{/animes/{id}(id = *{id})}" class="anime-img-link">
+                            <img th:src="*{imageThumbnailUrl}" class="anime-img" alt="...">
+                        </a>
+
+                        <div class="anime-info">
+                            <a th:href="@{/animes/{id}(id = *{id})}"><h3 class="anime-title" th:text="*{name}"></h3>
+                            </a>
+                            <div class="likes-container">
+                                <p class="anime-likes" th:text="*{likes}"></p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+
+    <th:block th:include="~{/fragments/footer}"></th:block>
+</div>
+</body>
+
+</html>

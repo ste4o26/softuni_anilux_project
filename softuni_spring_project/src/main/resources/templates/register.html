@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+</head>
+
+<body>
+<div class="root">
+    <th:block th:include="~{/fragments/header}"></th:block>
+
+    <th:block th:include="~{/fragments/side-nav}"></th:block>
+
+    <main class="register-main">
+        <section class="form-container">
+            <p class="form-description">Sign Up</p>
+
+            <form th:object="${userRegisterBindingModel}" th:action="@{/users/register}" method="POST" class="form">
+                <div class="input-container" th:classappend="${#fields.hasErrors('username')} ? 'invalid'">
+                    <label for="username"></label>
+                    <input class="input-field" th:field="*{username}" type="text" name="username" id="username"
+                           placeholder="Username">
+                    <small th:each="e : ${#fields.errors('username')}" th:text="${e}"></small>
+                </div>
+
+                <div class="input-container" th:classappend="${#fields.hasErrors('email')} ? 'invalid'">
+                    <label for="email"></label>
+                    <input class="input-field" th:field="*{email}" type="email" name="email" id="email"
+                           placeholder="Email">
+                    <small th:each="e : ${#fields.errors('email')}" th:text="${e}"></small>
+                </div>
+
+                <div class="input-container" th:classappend="${#fields.hasErrors('password')} ? 'invalid'">
+                    <label for="password"></label>
+                    <input class="input-field" th:field="*{password}" type="password" name="password" id="password"
+                           placeholder="Password">
+                    <small th:each="e : ${#fields.errors('password')}" th:text="${e}"></small>
+                </div>
+
+                <div class="input-container"
+                     th:classappend="${#fields.hasErrors('confirmPassword') or areDifferentPasswords} ? 'invalid'">
+                    <label for="confirm-password"></label>
+                    <input class="input-field" th:field="*{confirmPassword}" type="password" name="confirmPassword"
+                           id="confirm-password"
+                           placeholder="Confirm Password">
+                    <small th:each="e : ${#fields.errors('confirmPassword')}" th:text="${e}"></small>
+                    <small th:if="${areDifferentPasswords}">Passwords doesn't matches</small>
+                </div>
+
+                <input type="submit" value="Create Account" class="submit-form input-field">
+            </form>
+
+            <section class="form-redirect">
+                <p>Already a member?</p>
+                <button><a th:href="@{/users/login}">Sign In</a></button>
+            </section>
+        </section>
+    </main>
+
+
+    <th:block th:include="~{/fragments/footer}"></th:block>
+</div>
+</body>
+
+</html>

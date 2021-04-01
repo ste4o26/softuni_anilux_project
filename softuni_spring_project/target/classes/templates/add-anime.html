@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+</head>
+<body>
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main>
+    <section class="form-container">
+        <p class="form-description">Upload Anime</p>
+
+        <form th:object="${animeBindingModel}" th:action="@{/animes/upload}" method="POST" class="form"
+              enctype="multipart/form-data">
+
+            <small th:if="${errorMassage != null}" th:text="${errorMassage}"></small>
+
+            <div class="input-container" th:classappend="${#fields.hasErrors()} ? 'invalid'">
+                <label for="name"></label>
+                <input class="input-field" th:field="*{name}" type="text" name="name" id="name" placeholder="Title">
+                <small th:if="*{#fields.hasErrors('name')}" th:text="${#fields.errors('name').get(0)}"></small>
+            </div>
+
+            <div class="input-container" th:classappend="${#fields.hasErrors()} ? 'invalid'">
+                <label for="summary"></label>
+                <input class="input-field" th:field="*{summary}" type="text" name="summary" id="summary"
+                       placeholder="Summary">
+                <small th:if="*{#fields.hasErrors('summary')}" th:text="${#fields.errors('summary').get(0)}"></small>
+            </div>
+
+            <div class="input-container">
+                <label class="input-field" for="imageThumbnailUrl">Browse Image</label>
+                <input hidden th:field="*{image}" class="input-field" type="file" name="image" id="imageThumbnailUrl"
+                       placeholder="Select Image">
+                <small th:if="${hasImage == false}">Image is mandatory field!</small>
+            </div>
+
+            <div class="input-container" th:classappend="${#fields.hasErrors()} ? 'invalid'">
+                <label for="trailerUrl"></label>
+                <input class="input-field file-input" th:field="*{trailerUrl}" type="text" name="trailerUrl"
+                       id="trailerUrl" placeholder="Trailer URL">
+                <small th:if="*{#fields.hasErrors('trailerUrl')}"
+                       th:text="${#fields.errors('trailerUrl').get(0)}"></small>
+            </div>
+
+
+            <div class="add-genres-container">
+                <th:block th:each="genre: ${genres}">
+                    <div class="input-genre-container">
+                        <label th:text="${genre.name}" th:for="${genre.name}" class="checkbox-label"></label>
+                        <input th:field="*{genres}" th:value="${genre.name}" type="checkbox" th:name="${genre.name}"
+                               th:id="${genre.name}"
+                               class="checkbox-input">
+                    </div>
+                </th:block>
+                <small style="margin: 0 auto" th:if="*{#fields.hasErrors('genres')}"
+                       th:text="${#fields.errors('genres').get(0)}"></small>
+            </div>
+
+            <section class="form-redirect">
+                <input type="submit" value="Upload" id="upload-anime-submit">
+            </section>
+
+        </form>
+    </section>
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>

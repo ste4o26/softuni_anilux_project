@@ -1,0 +1,43 @@
+<th:block xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <ul class="sidebar">
+        <a class="close-icon"><i class="fas fa-times"></i></a>
+
+        <th:block sec:authorize="isAuthenticated()">
+            <th:block sec:authorize="hasRole('ROLE_USER')">
+                <hr>
+                <h3 sec:authentication="name" class="sidebar-heading"> Profile</h3>
+                <li><a th:href="@{/users/myProfile}">My Profile</a></li>
+            </th:block>
+        </th:block>
+
+
+        <th:block sec:authorize="isAuthenticated()">
+            <th:block sec:authorize="hasRole('ROLE_USER')">
+                <hr>
+                <h3 class="sidebar-heading">Content</h3>
+                <li><a th:href="@{/animes/all(type = 'MOST_POPULAR', pageNumber = '1')}">Most Popular</a></li>
+                <li><a th:href="@{/animes/all(type = 'NEW_RELEASES', pageNumber = '1')}">New Releases</a></li>
+                <li><a th:href="@{/animes/all(type = 'RANDOMIZED', pageNumber = '1')}">Random</a></li>
+            </th:block>
+        </th:block>
+
+        <th:block>
+            <hr>
+            <h3 class="sidebar-heading">Account</h3>
+            <li sec:authorize="isAnonymous()"><a th:href="@{/users/register}">Sign Up</a></li>
+            <li sec:authorize="isAnonymous()"><a th:href="@{/users/login}">Sign In</a></li>
+            <li><a href="/contacts/contactUs">Contact Us</a></li>
+        </th:block>
+
+        <th:block sec:authorize="isAuthenticated()">
+            <th:block sec:authorize="hasRole('ROLE_ADMIN') or hasRole('ROLE_ROOT_ADMIN')">
+                <hr>
+                <h3 class="sidebar-heading">Admin</h3>
+                <li><a th:href="@{/animes/upload}">Upload Anime</a></li>
+                <li><a th:href="@{/users/all}">All Users</a></li>
+                <li><a th:href="@{/genres/upload}">Upload Genre</a></li>
+            </th:block>
+        </th:block>
+        <br>
+    </ul>
+</th:block>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+</head>
+<body>
+<div class="root">
+    <th:block th:include="~{/fragments/header}"></th:block>
+
+    <th:block th:include="~{/fragments/side-nav}"></th:block>
+
+    <main class="login-main">
+        <section class="form-container">
+            <p class="form-description">Sign In</p>
+
+            <small th:if="${wrongCredentials}">Wrong username or password!</small>
+
+            <form th:object="${userLoginBindingModel}" th:action="@{/users/login}" method="POST" class="form">
+                <div class="input-container"
+                     th:classappend="${wrongCredentials} ? 'invalid'">
+                    <label for="username"></label>
+                    <input class="input-field" th:field="*{username}" type="text" name="username" id="username"
+                           placeholder="Username">
+                    <small th:each="e : ${#fields.errors('username')}" th:text="${e}"></small>
+                </div>
+
+                <div class="input-container"
+                     th:classappend="${wrongCredentials} ? 'invalid'">
+                    <label for="password"></label>
+                    <input class="input-field" th:field="*{password}" type="password" name="password" id="password"
+                           placeholder="Password">
+                    <small th:each="e : ${#fields.errors('password')}" th:text="${e}"></small>
+                </div>
+
+                <input type="submit" value="Sign In" class="submit-form input-field">
+            </form>
+
+            <section class="form-redirect">
+                <p>Don't have an account?</p>
+                <button><a th:href="@{/users/register}">Sign Up</a></button>
+            </section>
+        </section>
+    </main>
+
+    <th:block th:include="~{/fragments/footer}"></th:block>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+
+    <!--    swiper js-->
+    <link rel="stylesheet" th:href="@{https://unpkg.com/swiper/swiper-bundle.css}">
+    <link rel="stylesheet" th:href="@{https://unpkg.com/swiper/swiper-bundle.min.css}">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script th:src="@{/js/controllers/my_swiper.js}"></script>
+</head>
+<body>
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main th:object="${userViewModel}" class="profile-page-main">
+    <section>
+        <header class="profile-header">
+            <h1>My Profile</h1>
+        </header>
+
+        <div class="user-details-container">
+            <p th:text="|Username: *{username}|"></p>
+            <p th:text="|Email: *{email}|"></p>
+        </div>
+    </section>
+
+    <section class="recommended-animes-container">
+        <section th:unless="${hasNoRecommendations}" class="swiper-container">
+            <header class="swiper-header">
+                <h2>Top picks for you</h2>
+            </header>
+
+            <div class="swiper-wrapper">
+                <div th:each="anime : ${userViewModel.recommended}" th:object="${anime}" class="swiper-slide">
+                    <div class="slide">
+                        <a th:href="@{/animes/{id}(id = *{id})}" class="anime-img-link">
+                            <img th:src="*{imageThumbnailUrl}" class="anime-img" alt="...">
+                        </a>
+
+                        <div class="anime-info">
+                            <a th:href="@{/animes/{id}(id = *{id})}"><h3 class="anime-title" th:text="*{name}"></h3>
+                            </a>
+                            <div class="likes-container">
+                                <p class="anime-likes" th:text="*{likes}"></p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+
+        <div th:if="${hasNoRecommendations}" class="profile-error-messege">
+            <h2>Unfortunately we can't recommend anything to you at the moment.</h2>
+            <p>Please try again later.</p>
+            <img class="profile-png-img"
+                 src="https://res.cloudinary.com/ste4o26/image/upload/v1616344714/sad_face_yfpa3b.png">
+        </div>
+    </section>
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>

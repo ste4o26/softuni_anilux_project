@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+</head>
+<body>
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main>
+    <section class="about-us">
+        <header>
+            <h2>About Us</h2>
+        </header>
+
+        <div class="about-us-content">
+            <p>We are a company that provides your favourite anime series to you for free. Once you sign up you can
+                watch every of our anime series leave comments search for your favourite animes and so on. We also try
+                to recommend series just for you.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto .</p>
+
+            <p>We are new in this industry so if you like and enjoy your time on ANILUX please feel free to tell us. We
+                will continue the hard work to try to provide you the best place to watch your series and make you feel
+                like you are at home.</p>
+        </div>
+    </section>
+
+    <section class="contact-us" th:object="${emailBindingModel}">
+        <header>
+            <h2>Contact Us</h2>
+        </header>
+
+        <div class="contact-us-content">
+            <h3>You want to tell us something?</h3>
+            <p>Please shoot it whatever it is!</p>
+
+            <form th:action="@{/contacts/feedback}" method="POST" class="form">
+                <div class="input-container" th:classappend="${#fields.hasErrors()} ? 'invalid'">
+                    <label for="issue"></label>
+                    <input th:field="*{content}" class="input-field" type="text" name="issue" id="issue"
+                           placeholder="Give us a feedback.">
+                    <small th:if="${#fields.hasErrors('content')}"
+                           th:text="${#fields.errors('content').get(0)}"></small>
+                </div>
+
+                <input type="submit" value="Send" class="small-input-field">
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>

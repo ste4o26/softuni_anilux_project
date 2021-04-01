@@ -1,0 +1,18 @@
+<th:block xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <header class="site-header">
+        <nav class="site-nav">
+            <ul class="nav-container">
+                <li class="sidebar-menu-icon"><a><i class="fas fa-bars"></i></a></li>
+                <li>
+                    <a th:href="@{/home}"><h1 class="site-title">ANILUX</h1></a>
+                </li>
+                <li sec:authorize="isAnonymous()"><a th:href="@{/users/login}">Sign In</a></li>
+                <li sec:authorize="isAuthenticated()">
+                    <form th:action="@{/users/logout}" method="POST">
+                        <button class="logout-button" type="submit">Sign Out</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</th:block>

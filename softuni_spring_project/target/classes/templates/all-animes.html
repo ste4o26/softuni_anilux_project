@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}">
+    </th:block>
+    <script th:src="@{/js/controllers/search.js}"></script>
+</head>
+<body>
+
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main class="all-animes-main">
+    <header class="all-animes-header">
+        <h2>Search your favourite animes</h2>
+        <div class="form" id="search-form">
+            <label for="search"></label>
+            <input type="text" id="search" class="search-bar" autocomplete="off" placeholder="Search..">
+            <div class="found-result-container"></div>
+            <a class="small-input-field" id="search-link">Find</a>
+        </div>
+
+
+    </header>
+
+    <section class="slides-container">
+        <th:block th:each="anime : ${allAnimes}" th:object="${anime}">
+            <div class="slide" id="single-slide">
+                <a th:href="@{/animes/{id}(id = *{id})}" class="anime-img-link">
+                    <img th:src="*{imageThumbnailUrl}" class="anime-img" alt="...">
+                </a>
+
+                <div class="anime-info">
+                    <a th:href="@{/animes/{id}(id = *{id})}"><h3 class="anime-title" th:text="*{name}"></h3>
+                    </a>
+                    <div class="likes-container">
+                        <p class="anime-likes" th:text="*{likes}"></p>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </th:block>
+    </section>
+
+    <section class="buttons-container">
+        <a th:if="${pageNum > 1}" th:href="@{/animes/all(type = ${animesType}, pageNumber = ${pageNum - 1})}"
+           class="previous-page-button">Previous</a>
+        <a th:if="${allAnimes.size() == 2}" th:href="@{/animes/all(type = ${animesType}, pageNumber = ${pageNum + 1})}"
+           class="next-page-button">Next</a>
+    </section>
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>

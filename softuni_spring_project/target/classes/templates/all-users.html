@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+</head>
+<body>
+
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main class="all-users-container">
+    <h2>Users List</h2>
+
+    <small th:unless="${#strings.equals(errorMessage, '')}" th:text="${errorMessage}" class="all-users-err-msg"></small>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Authorities</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:unless="${#authentication.name.equals(user.username)}" th:each="user : ${allUsers}" class="user-details">
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.email}"></td>
+            <td><span th:each="authoritie : ${user.authorities}" th:text="${authoritie.authority}"
+                      class="user-authority"></span></td>
+            <td class="update-forms-container">
+                <form th:action="@{/users/update(username=${user.username}, forPromotion=${true})}" method="POST">
+                    <input type="submit" value="Promote" class="small-input-field">
+                </form>
+                <form th:action="@{/users/update(username=${user.username}, forPromotion=${false})}" method="POST">
+                    <input type="submit" value="Demote" class="small-input-field">
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>

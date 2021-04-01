@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+</head>
+<body>
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main class="add-main">
+    <section th:object="${episodeBindingModel}" class="form-container">
+        <p class="form-description">Add Episode</p>
+
+        <form enctype="multipart/form-data" th:action="@{/episodes/add/{seasonId}(seasonId = *{seasonId})}"
+              method="POST" class="form">
+
+            <div th:classappend="${hasVideo == false} ? 'invalid'" class="input-container">
+                <label for="episode_url"></label>
+                <input class="input-field file-input" type="file" accept="video/*" name="episode" id="episode_url"
+                       placeholder="Episode URL">
+                <small th:unless="${hasVideo}">Video file(mp4) is required!</small>
+            </div>
+
+            <div class="form-redirect">
+                <input type="submit" value="Upload" id="upload-anime-submit">
+            </div>
+        </form>
+    </section>
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>

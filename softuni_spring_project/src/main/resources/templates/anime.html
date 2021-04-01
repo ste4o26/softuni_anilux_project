@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+    <script th:src="@{/js/controllers/like.js}"></script>
+</head>
+<body>
+
+<div class="root">
+    <th:block th:include="~{/fragments/header}"></th:block>
+    <th:block th:include="~{/fragments/side-nav}"></th:block>
+
+    <main th:object="${anime}" class="anime-page-main">
+        <div class="title-container">
+            <h1 class="anime-page-title" th:text="*{name}"></h1>
+        </div>
+
+        <div class="trailer-container">
+            <!--            https://www.youtube.com/embed/k4iTICgLOtw todo hardcode the prefix-->
+            <iframe class="trailer" th:src="*{trailerUrl}"></iframe>
+        </div>
+
+        <div class="anime-basic-info">
+            <div class='anime-description'>
+                <h3>Summary</h3>
+                <p th:text="*{summary}"></p>
+            </div>
+
+            <div class='anime-genres'>
+                <h3>Genres</h3>
+                <p th:text="${genres}"></p>
+            </div>
+        </div>
+
+        <section class="seasons-container">
+            <div class="season-info">
+                <h2>Season Number</h2>
+                <h2>Total Episodes</h2>
+            </div>
+
+            <div th:each="season : ${anime.seasons}" class="season">
+                <a th:href="@{/seasons/{id}(id = ${season.id})}"><h3 class="season-number"
+                                                                     th:text="${season.number}"></h3></a>
+                <h3 th:text="${#sets.size(season.episodes)}"></h3>
+            </div>
+
+            <div id="message-container">
+                <small th:text="${message}"></small>
+            </div>
+
+            <div class="forms-inputs-container" sec:authorize="isAuthenticated()">
+                <form sec:authorize="hasAnyRole('ROLE_ROOT_ADNIM', 'ROLE_ADMIN')" class="anime-form"
+                      th:action="@{/seasons/add/{animeId}(animeId = *{id})}" method="POST">
+                    <input class="small-input-field" type="submit" value="Add Season" id="add-season">
+                </form>
+
+                <form sec:authorize="hasAnyRole('ROLE_ROOT_ADNIM', 'ROLE_ADMIN')" class="anime-form"
+                      th:action="@{/animes/delete/(id = *{id})}" method="POST">
+                    <input class="small-input-field" type="submit" value="Delete" id="delete">
+                </form>
+
+                <form class="anime-form" th:action="@{/animes/like(title = *{name})}" method="POST">
+                    <input class="small-input-field" type="submit" value="Like" id="like">
+                </form>
+
+                <form class="anime-form" th:action="@{/animes/myAnimeList/add(title = *{name})}" method="POST">
+                    <input class="small-input-field" type="submit" value="Add To List" id="add-my-anime-list">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <th:block th:include="~{/fragments/footer}"></th:block>
+</div>
+</body>
+</html>

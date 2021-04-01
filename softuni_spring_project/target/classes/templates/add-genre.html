@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+</head>
+<body>
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main class="add-main">
+    <section th:object="${genreBindingModel}" class="form-container">
+        <p class="form-description">Add Genre</p>
+
+        <form th:action="@{/genres/upload}" method="POST" class="form">
+            <div class="input-container"
+                 th:classappend="${#fields.hasErrors('name')} ? 'invalid'">
+                <label for="name"></label>
+                <input class="input-field" th:field="*{name}" type="text" name="name" id="name"
+                       placeholder="Genre">
+                <small th:each="e : ${#fields.errors('name')}" th:text="${e}"></small>
+            </div>
+
+            <section class="form-redirect">
+                <input type="submit" value="Upload" id="upload-anime-submit">
+            </section>
+        </form>
+    </section>
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>

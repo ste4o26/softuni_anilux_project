@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d796b2cc-a92a-49c3-ab51-e1de89b9a268" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="526" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="anilux: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nUBNeB8M78uym9YyhtTrMJDR9I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="anilux.anilux_rest_api.web.controllers" />
+      <recent name="anilux.anilux_rest_api.services" />
+      <recent name="anilux.anilux_rest_api.repositories" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="anilux.anilux_rest_api" />
+      <recent name="anilux.anilux_rest_api.services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Projects\anilux-rest-api\src\main\resources\static\video" />
+      <recent name="D:\My Projects\anilux-rest-api\src\main\resources\static\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My Projects\anilux-rest-api\src\main\resources\templates" />
+      <recent name="D:\My Projects\anilux-rest-api\src\main\resources\static\js" />
+      <recent name="D:\My Projects\anilux-rest-api\src\main\resources\static\img" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="anilux.anilux_rest_api.exceptions" />
+      <recent name="anilux.anilux_rest_api.domain.view_models" />
+      <recent name="anilux.anilux_rest_api.domain.binding_models" />
+      <recent name="anilux.anilux_rest_api.domain.service_models" />
+      <recent name="anilux.anilux_rest_api.domain.entities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AniluxRestApiApplication">
+    <configuration name="All in anilux-rest-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anilux_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AniluxRestApiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anilux_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anilux.anilux_spring_mvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anilux.anilux_spring_mvc" />
+      <option name="MAIN_CLASS_NAME" value="anilux.anilux_spring_mvc.AniluxRestApiApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AniluxRestApiApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anilux_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anilux.anilux_spring_mvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anilux.anilux_spring_mvc" />
+      <option name="MAIN_CLASS_NAME" value="anilux.anilux_spring_mvc.AniluxRestApiApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimeControllerTest.getAllByPage_whenNOArgumentsPresent_shouldReturnErrorPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anilux_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anilux.anilux_spring_mvc.web.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anilux.anilux_spring_mvc.web.controllers" />
+      <option name="MAIN_CLASS_NAME" value="anilux.anilux_spring_mvc.web.controllers.AnimeControllerTest" />
+      <option name="METHOD_NAME" value="getAllByPage_whenNOArgumentsPresent_shouldReturnErrorPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="anilux.anilux_spring_mvc in anilux-rest-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anilux_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anilux.anilux_spring_mvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anilux.anilux_spring_mvc" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AniluxRestApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="anilux_project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="anilux.anilux_spring_mvc.AniluxRestApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AnimeControllerTest.getAllByPage_whenNOArgumentsPresent_shouldReturnErrorPage" />
+      <item itemvalue="JUnit.All in anilux-rest-api" />
+      <item itemvalue="JUnit.AniluxRestApiApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.AniluxRestApiApplicationTests" />
+      <item itemvalue="JUnit.anilux.anilux_spring_mvc in anilux-rest-api" />
+      <item itemvalue="Spring Boot.AniluxRestApiApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in anilux-rest-api" />
+        <item itemvalue="JUnit.anilux.anilux_spring_mvc in anilux-rest-api" />
+        <item itemvalue="JUnit.AniluxRestApiApplicationTests" />
+        <item itemvalue="JUnit.AniluxRestApiApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.AnimeControllerTest.getAllByPage_whenNOArgumentsPresent_shouldReturnErrorPage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d796b2cc-a92a-49c3-ab51-e1de89b9a268" name="Default Changelist" comment="" />
+      <created>1611434749281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611434749281</updated>
+      <workItem from="1611434753179" duration="1354000" />
+      <workItem from="1611447156365" duration="12000" />
+      <workItem from="1611771734640" duration="11005000" />
+      <workItem from="1612275995201" duration="15947000" />
+      <workItem from="1612351488409" duration="9457000" />
+      <workItem from="1612707585727" duration="18175000" />
+      <workItem from="1612816210576" duration="12073000" />
+      <workItem from="1613073264806" duration="217000" />
+      <workItem from="1613586675936" duration="11917000" />
+      <workItem from="1613598686264" duration="1027000" />
+      <workItem from="1613678192967" duration="2024000" />
+      <workItem from="1613681012265" duration="2877000" />
+      <workItem from="1613683986071" duration="1843000" />
+      <workItem from="1613686015492" duration="3666000" />
+      <workItem from="1613690367692" duration="418000" />
+      <workItem from="1613690803884" duration="5161000" />
+      <workItem from="1614027371892" duration="884000" />
+      <workItem from="1614028275745" duration="6630000" />
+      <workItem from="1614112022104" duration="2258000" />
+      <workItem from="1614114329193" duration="5710000" />
+      <workItem from="1614192746812" duration="17898000" />
+      <workItem from="1614451423534" duration="24881000" />
+      <workItem from="1614628922510" duration="10515000" />
+      <workItem from="1614706628884" duration="12607000" />
+      <workItem from="1614885241443" duration="8004000" />
+      <workItem from="1615030782424" duration="18229000" />
+      <workItem from="1615109908627" duration="23193000" />
+      <workItem from="1615369658413" duration="22984000" />
+      <workItem from="1615495214072" duration="5414000" />
+      <workItem from="1615570070549" duration="21763000" />
+      <workItem from="1615717688267" duration="31622000" />
+      <workItem from="1616010865871" duration="9753000" />
+      <workItem from="1616234712402" duration="42028000" />
+      <workItem from="1616616199019" duration="6174000" />
+      <workItem from="1616622406840" duration="1208000" />
+      <workItem from="1616624480815" duration="1640000" />
+      <workItem from="1616698943320" duration="6436000" />
+      <workItem from="1616833754480" duration="11258000" />
+      <workItem from="1616851035247" duration="36802000" />
+      <workItem from="1616929774596" duration="38401000" />
+      <workItem from="1617045320703" duration="6788000" />
+      <workItem from="1617052145489" duration="8539000" />
+      <workItem from="1617129930369" duration="2209000" />
+      <workItem from="1617132179780" duration="11877000" />
+      <workItem from="1617223308343" duration="5000" />
+      <workItem from="1617223332803" duration="3063000" />
+      <workItem from="1617229669713" duration="878000" />
+      <workItem from="1617230571801" duration="123000" />
+      <workItem from="1617231664868" duration="614000" />
+      <workItem from="1617232341697" duration="3503000" />
+      <workItem from="1617236710191" duration="1641000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/src/softuni_anilux_project" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="72" key="#Assign_Data_Sources" timestamp="1616319696371">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1616319696371" />
+    <state x="361" y="72" key="#Notifications" timestamp="1617229699697">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1617229699697" />
+    <state x="361" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616860920577">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1616860920577" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1617134692190">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1617134692190" />
+    <state x="416" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614116194936">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="416" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1614116194936" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1616963363921">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616963363921" />
+    <state x="416" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1611771863824">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="416" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1611771863824" />
+    <state x="566" y="273" width="443" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1616960389260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="273" width="443" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1616960389260" />
+    <state x="534" y="244" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1616958028504">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="534" y="244" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1536.824@0.0.1536.824" timestamp="1616958028504" />
+    <state x="116" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615145613846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="116" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1615145613846" />
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616103580630">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616103580630" />
+    <state x="499" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1614885512074">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1614885512074" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1615650203282">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615650203282" />
+    <state width="1493" height="361" key="GridCell.Tab.0.bottom" timestamp="1617238370268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
+    <state width="1493" height="361" key="GridCell.Tab.0.center" timestamp="1617238370267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617238370267" />
+    <state width="1493" height="361" key="GridCell.Tab.0.left" timestamp="1617238370267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617238370267" />
+    <state width="1493" height="361" key="GridCell.Tab.0.right" timestamp="1617238370267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617238370267" />
+    <state width="1493" height="361" key="GridCell.Tab.1.bottom" timestamp="1617238370268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
+    <state width="1493" height="361" key="GridCell.Tab.1.center" timestamp="1617238370268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
+    <state width="1493" height="361" key="GridCell.Tab.1.left" timestamp="1617238370268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
+    <state width="1493" height="361" key="GridCell.Tab.1.right" timestamp="1617238370268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="361" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
+    <state width="1493" height="263" key="GridCell.Tab.2.bottom" timestamp="1617146146302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
+    <state width="1493" height="263" key="GridCell.Tab.2.center" timestamp="1617146146302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
+    <state width="1493" height="263" key="GridCell.Tab.2.left" timestamp="1617146146302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
+    <state width="1493" height="263" key="GridCell.Tab.2.right" timestamp="1617146146302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1617142301669">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1617142301669" />
+    <state x="379" y="79" key="Registry" timestamp="1614028238904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="379" y="79" key="Registry/0.0.1536.824@0.0.1536.824" timestamp="1614028238904" />
+    <state x="277" y="56" key="SettingsEditor" timestamp="1617229754984">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617229754984" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1613593496676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1536.824@0.0.1536.824" timestamp="1613593496676" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1615726396357">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1615726396357" />
+    <state x="664" y="303" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1617140229759">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="664" y="303" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1617140229759" />
+    <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog" timestamp="1612294895666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1612294895666" />
+    <state x="499" y="218" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1616240366097">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="218" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1616240366097" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1617236712018">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1617236712018" />
+    <state x="536" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617050655115">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="536" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1617050655115" />
+    <state x="329" y="149" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1616324543622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="329" y="149" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1616324543622" />
+    <state x="209" y="115" key="new project wizard" timestamp="1613073478876">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="115" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1613073478876" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1616884421928">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1616884421928" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617145001480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617145001480" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/anilux_rest_api$All_in_anilux_rest_api.ic" NAME="All in anilux-rest-api Coverage Results" MODIFIED="1617136691784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/anilux_rest_api$AnimeRepositoryTest.ic" NAME="AnimeRepositoryTest Coverage Results" MODIFIED="1616861112442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.repositories.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$CommentServiceImplTest.ic" NAME="CommentServiceImplTest Coverage Results" MODIFIED="1616966311215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$HomeControllerTest.ic" NAME="HomeControllerTest Coverage Results" MODIFIED="1617057610834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.web.controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$UserServiceImplTest_addToMyAnimeList_whenNewAnimeIsPassed_shouldAddItSuccessfully.ic" NAME="UserServiceImplTest.addToMyAnimeList_whenNewAnimeIsPassed_shouldAddItSuccessfully Coverage Results" MODIFIED="1616931299113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$anilux_anilux_rest_api_services_in_anilux_rest_api.ic" NAME="anilux.anilux_rest_api.services in anilux-rest-api Coverage Results" MODIFIED="1617045687342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$UserServiceImplTest_updateRoles_whenUserWithRoleRootAdminPromoteUserWithRoleUser_shouldBePromotedSuccessfully.ic" NAME="UserServiceImplTest.updateRoles_whenUserWithRoleRootAdminPromoteUserWithRoleUser_shouldBePromotedSuccessfully Coverage Results" MODIFIED="1616884236393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$EpisodeServiceImplTest.ic" NAME="EpisodeServiceImplTest Coverage Results" MODIFIED="1617046814086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$AniluxRestApiApplicationTests_contextLoads.ic" NAME="AniluxRestApiApplicationTests.contextLoads Coverage Results" MODIFIED="1617136053997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$anilux_anilux_rest_api_web_in_anilux_rest_api.ic" NAME="anilux.anilux_rest_api.web in anilux-rest-api Coverage Results" MODIFIED="1617059926337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.web.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$GenreServiceImplTest.ic" NAME="GenreServiceImplTest Coverage Results" MODIFIED="1616960057905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$AnimeServiceImplTest.ic" NAME="AnimeServiceImplTest Coverage Results" MODIFIED="1616954437090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$RoleServiceImplTest.ic" NAME="RoleServiceImplTest Coverage Results" MODIFIED="1616965001320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$SeasonServiceImplTest.ic" NAME="SeasonServiceImplTest Coverage Results" MODIFIED="1616963042461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$UserServiceImplTest_register_whenCorrectCredentials_shouldRegisterUser.ic" NAME="UserServiceImplTest.register_whenCorrectCredentials_shouldRegisterUser Coverage Results" MODIFIED="1616876192885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/anilux_rest_api$UserServiceImplTest.ic" NAME="UserServiceImplTest Coverage Results" MODIFIED="1616934866662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>anilux.anilux_rest_api.services.*</FILTER>
+    </SUITE>
+  </component>
+</project>

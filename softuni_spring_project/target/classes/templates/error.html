@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{/fragments/head}"></th:block>
+    <script th:src="@{/js/controllers/error.js}"></script>
+</head>
+<body>
+<th:block th:include="~{/fragments/header}"></th:block>
+<th:block th:include="~{/fragments/side-nav}"></th:block>
+
+<main class="site-main error-page-main">
+    <header class="static-error-container">
+        <h1 class="static-error">Oops something went wrong.</h1>
+        <h2 class="static-error">We are working to fix the problem.</h2>
+    </header>
+
+    <div class="dynamic-error-container">
+        <button type="button" id="display-error-button">VIEW ERROR DETAILS</button>
+        <h2 id="error-message" th:text="${message}" style="visibility: hidden"></h2>
+    </div>
+</main>
+
+<th:block th:include="~{/fragments/footer}"></th:block>
+</body>
+</html>
