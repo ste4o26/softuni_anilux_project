@@ -118,7 +118,7 @@
       <recent name="anilux.anilux_rest_api.domain.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AniluxRestApiApplication">
+  <component name="RunManager" selected="JUnit.All in anilux-rest-api">
     <configuration name="All in anilux-rest-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anilux_project" />
       <option name="PACKAGE_NAME" value="" />
@@ -274,6 +274,9 @@
       <workItem from="1617231664868" duration="614000" />
       <workItem from="1617232341697" duration="3503000" />
       <workItem from="1617236710191" duration="1641000" />
+      <workItem from="1617302490522" duration="165000" />
+      <workItem from="1617614467482" duration="18042000" />
+      <workItem from="1617740852919" duration="2664000" />
     </task>
     <servers />
   </component>
@@ -307,10 +310,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="416" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1614116194936" />
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1616963363921">
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1617741355606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616963363921" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617741355606" />
     <state x="416" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1611771863824">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -339,38 +342,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615650203282" />
-    <state width="1493" height="361" key="GridCell.Tab.0.bottom" timestamp="1617238370268">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1617743552734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
-    <state width="1493" height="361" key="GridCell.Tab.0.center" timestamp="1617238370267">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617743552734" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1617743552733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617238370267" />
-    <state width="1493" height="361" key="GridCell.Tab.0.left" timestamp="1617238370267">
+    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617743552733" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1617743552732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617238370267" />
-    <state width="1493" height="361" key="GridCell.Tab.0.right" timestamp="1617238370267">
+    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617743552732" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1617743552734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617238370267" />
-    <state width="1493" height="361" key="GridCell.Tab.1.bottom" timestamp="1617238370268">
+    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617743552734" />
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom" timestamp="1617743552730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
-    <state width="1493" height="361" key="GridCell.Tab.1.center" timestamp="1617238370268">
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617743552730" />
+    <state width="1493" height="266" key="GridCell.Tab.1.center" timestamp="1617743552730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
-    <state width="1493" height="361" key="GridCell.Tab.1.left" timestamp="1617238370268">
+    <state width="1493" height="266" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617743552730" />
+    <state width="1493" height="266" key="GridCell.Tab.1.left" timestamp="1617743552730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
-    <state width="1493" height="361" key="GridCell.Tab.1.right" timestamp="1617238370268">
+    <state width="1493" height="266" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617743552730" />
+    <state width="1493" height="266" key="GridCell.Tab.1.right" timestamp="1617743552730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="361" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617238370268" />
+    <state width="1493" height="266" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617743552730" />
     <state width="1493" height="263" key="GridCell.Tab.2.bottom" timestamp="1617146146302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -419,10 +422,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="218" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1616240366097" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1617236712018">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1617740852523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1617236712018" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1617740852523" />
     <state x="536" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617050655115">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -431,21 +434,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="329" y="149" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1616324543622" />
+    <state x="462" y="10" width="611" height="804" key="find.popup" timestamp="1617743132093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="462" y="10" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1617743132093" />
     <state x="209" y="115" key="new project wizard" timestamp="1613073478876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="115" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1613073478876" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1616884421928">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1617630853710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1616884421928" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617145001480">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1617630853710" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617742677891">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617145001480" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617742677891" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/anilux_rest_api$All_in_anilux_rest_api.ic" NAME="All in anilux-rest-api Coverage Results" MODIFIED="1617136691784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/anilux_rest_api$All_in_anilux_rest_api.ic" NAME="All in anilux-rest-api Coverage Results" MODIFIED="1617743475582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/anilux_rest_api$AnimeRepositoryTest.ic" NAME="AnimeRepositoryTest Coverage Results" MODIFIED="1616861112442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>anilux.anilux_rest_api.repositories.*</FILTER>
     </SUITE>

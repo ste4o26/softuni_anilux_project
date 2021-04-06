@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -31,5 +32,11 @@ public class DetailAnimeViewModel extends BaseViewModel {
                 .stream()
                 .sorted(Comparator.comparing(SeasonViewModel::getNumber))
                 .collect(Collectors.toCollection(LinkedHashSet::new)));
+    }
+
+    public boolean isLastSeasonCompleted() {
+        ArrayList<SeasonViewModel> allSeasons = new ArrayList<>(this.getSeasons());
+        SeasonViewModel lastSeason = allSeasons.get(allSeasons.size() - 1);
+        return lastSeason.isCompleted();
     }
 }

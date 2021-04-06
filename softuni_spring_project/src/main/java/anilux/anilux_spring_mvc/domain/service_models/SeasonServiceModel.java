@@ -15,6 +15,9 @@ public class SeasonServiceModel extends BaseServiceModel {
     private Integer number;
 
     @NotNull
+    private boolean isCompleted;
+
+    @NotNull
     @ToString.Exclude
     private AnimeServiceModel anime;
 

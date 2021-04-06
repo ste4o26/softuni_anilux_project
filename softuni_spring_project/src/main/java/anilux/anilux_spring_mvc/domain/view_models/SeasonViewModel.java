@@ -14,8 +14,9 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @Data
 public class SeasonViewModel extends BaseViewModel {
-    //TODO
     private Integer number;
+
+    private boolean isCompleted;
 
     private DetailAnimeViewModel anime;
 

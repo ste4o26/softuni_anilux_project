@@ -49,7 +49,7 @@
             </div>
 
             <div class="forms-inputs-container" sec:authorize="isAuthenticated()">
-                <form sec:authorize="hasAnyRole('ROLE_ROOT_ADNIM', 'ROLE_ADMIN')" class="anime-form"
+                <form th:if="${anime.isLastSeasonCompleted()}" sec:authorize="hasAnyRole('ROLE_ROOT_ADNIM', 'ROLE_ADMIN')" class="anime-form"
                       th:action="@{/seasons/add/{animeId}(animeId = *{id})}" method="POST">
                     <input class="small-input-field" type="submit" value="Add Season" id="add-season">
                 </form>

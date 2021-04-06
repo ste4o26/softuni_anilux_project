@@ -75,4 +75,20 @@ public class SeasonServiceImpl implements SeasonService {
 
         return this.modelMapper.map(season, SeasonServiceModel.class);
     }
+
+    @Override
+    public SeasonServiceModel completeById(Long seasonId) {
+        SeasonServiceModel seasonServiceModel = this.fetchById(seasonId);
+        if (seasonServiceModel.isCompleted()) {
+            throw new IllegalStateException("This season is already completed!");
+        }
+
+        seasonServiceModel.setCompleted(true);
+
+
+        Season season = this.modelMapper.map(seasonServiceModel, Season.class);
+        this.seasonRepository.saveAndFlush(season);
+
+        return seasonServiceModel;
+    }
 }

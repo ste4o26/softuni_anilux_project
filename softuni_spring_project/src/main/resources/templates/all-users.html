@@ -14,14 +14,6 @@
     <small th:unless="${#strings.equals(errorMessage, '')}" th:text="${errorMessage}" class="all-users-err-msg"></small>
 
     <table>
-        <thead>
-        <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Authorities</th>
-        </tr>
-        </thead>
-
         <tbody>
         <tr th:unless="${#authentication.name.equals(user.username)}" th:each="user : ${allUsers}" class="user-details">
             <td th:text="${user.username}"></td>

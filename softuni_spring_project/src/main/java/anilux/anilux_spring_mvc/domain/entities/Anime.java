@@ -27,9 +27,6 @@ public class Anime extends BaseEntity {
     @Column(name = "release_date", nullable = false)
     private LocalDate releaseDate;
 
-    @Column(name = "is_completed", nullable = false)
-    private boolean isCompleted;
-
     @Column(name = "likes")
     private Integer likes;
 

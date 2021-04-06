@@ -258,7 +258,7 @@ class UserServiceTest {
         anime1.setSummary("Some summery just in case...");
         anime1.setImageThumbnailUrl("/img/1.jpg");
         anime1.setReleaseDate(LocalDate.of(2015, 2, 26));
-        anime1.setCompleted(false);
+//        anime1.setCompleted(false);
         anime1.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         testAnimeList.add(anime1);
 
@@ -267,7 +267,7 @@ class UserServiceTest {
         anime2.setSummary("Some summery just in case...");
         anime2.setImageThumbnailUrl("/img/2.jpg");
         anime2.setReleaseDate(LocalDate.of(2016, 3, 27));
-        anime2.setCompleted(false);
+//        anime2.setCompleted(false);
         anime2.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         testAnimeList.add(anime2);
 

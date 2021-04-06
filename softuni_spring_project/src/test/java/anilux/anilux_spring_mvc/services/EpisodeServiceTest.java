@@ -45,7 +45,7 @@ class EpisodeServiceTest extends BaseTest {
         Anime anime = new Anime();
         anime.setName("Black Clover");
 
-        season = new Season(1, anime, new HashSet<>());
+        season = new Season(1, false, anime, new HashSet<>());
         season.setId(1L);
 
         episode = new Episode();

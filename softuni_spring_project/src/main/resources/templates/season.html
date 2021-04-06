@@ -17,7 +17,7 @@
         </div>
 
         <div class="anime-description">
-            <h3 th:text="${season.anime.name}"></h3>
+            <h3 th:text="|${season.anime.name} Season: ${season.number}|"></h3>
             <p th:text="${season.anime.summary}"></p>
         </div>
 
@@ -34,8 +34,8 @@
 
             <div>
                 <h3>Status</h3>
-                <p th:unless="${season.anime.isCompleted}" th:text="|On going|"></p>
-                <p th:if="${season.anime.isCompleted}" th:text="Completed"></p>
+                <p th:unless="${season.isCompleted}" th:text="|On going|"></p>
+                <p th:if="${season.isCompleted}" th:text="Completed"></p>
             </div>
 
             <!--            TODO the duration!-->
@@ -57,10 +57,12 @@
     </section>
 
     <div sec:authorize="hasRole('ROLE_ADMIN') or hasRole('ROLE_ROOT_ADMIN')" class="button-container">
-        <a class="small-input-field" th:href="@{/episodes/add/{seasonId}(seasonId = *{id})}">Add Episode</a>
+        <a th:unless="${season.isCompleted()}" class="small-input-field" th:href="@{/episodes/add/{seasonId}(seasonId = *{id})}">Add Episode</a>
+
+        <a th:unless="${season.isCompleted()}" class="small-input-field" th:href="@{/seasons/complete/{seasonId}(seasonId = *{id})}">Complete</a>
 
         <form th:unless="*{anime.seasons.size() <= 1 || season.number == 1}"
-              sec:authorize="hasAnyRole('ROLE_ROOT_ADNIM', 'ROLE_ADMIN')" class="anime-form"
+              sec:authorize="hasAnyRole('ROLE_ROOT_ADNIM', 'ROLE_ADMIN')"
               th:action="@{/seasons/delete/(seasonId = *{id})}" method="POST">
             <input class="small-input-field" type="submit" value="Delete" id="delete" style="width: 8em">
         </form>

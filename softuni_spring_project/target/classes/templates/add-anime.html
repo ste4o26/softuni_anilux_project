@@ -7,8 +7,8 @@
 <th:block th:include="~{/fragments/header}"></th:block>
 <th:block th:include="~{/fragments/side-nav}"></th:block>
 
-<main>
-    <section class="form-container">
+<main class="login-main">
+    <section class="form-container add-anime-form-container">
         <p class="form-description">Upload Anime</p>
 
         <form th:object="${animeBindingModel}" th:action="@{/animes/upload}" method="POST" class="form"

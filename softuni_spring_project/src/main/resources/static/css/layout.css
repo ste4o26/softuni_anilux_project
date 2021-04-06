@@ -9,6 +9,7 @@ hr,
 .sidebar .close-icon,
 .header-title,
 .anime-info,
+.anime-info-card,
 .site-footer,
 .form-description,
 .form-redirect,
@@ -17,14 +18,16 @@ hr,
 }
 
 .nav-container li:hover,
-.anime-info {
+.anime-info,
+.anime-info-card {
     background-color: #323d3d;
 }
 
 /* HEADER AND NAVIGATION STYLES! */
 
 .site-main {
-    height: 36em;
+    height: 100vh;
+    /*width: 100vw;*/
 }
 
 .site-header {
@@ -41,7 +44,7 @@ hr,
 }
 
 .site-nav {
-    margin: 0 2em 0 2em;
+    margin: 0 0.5em 0 0.5em;
 }
 
 .nav-container {
@@ -58,7 +61,7 @@ hr,
 
 /* SIDEBAR STYLES */
 .sidebar-menu-icon {
-    margin-right: 3.4em;
+    min-width: 52px
 }
 
 a,
@@ -148,28 +151,32 @@ hr {
 /* SWIPER STYLES */
 
 .swiper-container {
-    box-sizing: border-box;
-    width: 90em;
-    height: 35em;
+    /*box-sizing: border-box;*/
+    max-width: 90em;
+    /*height: 35em;*/
+    /*max-width: 90em;*/
+    /*min-height: 37vw;*/
+    height: 35vw;
     margin: 8em auto;
 }
 
 .swiper-wrapper {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 0 0.2em 0 0.2em;
-    max-width: 17em;
+    max-width: 40vw;
     height: 100%;
-    border-radius: 0.3em;
+    /*border-radius: 0.3em;*/
     overflow: hidden;
 }
 
 .slide {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -177,18 +184,59 @@ hr {
     height: 100%;
 }
 
-.anime-info {
-    margin-top: 0.2em;
+.anime-info,
+.anime-info-card {
     box-sizing: border-box;
+    margin-top: 0.2em;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     padding: 0.5em;
-    line-height: 1.5;
     height: 20%;
     border-radius: 0.3em;
+}
+
+@media screen and (max-width: 1400px) {
+    .anime-info {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .anime-info {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .anime-info {
+        font-size: 0.5em;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .anime-info {
+        font-size: 0.5em;
+        height: 30%;
+    }
+
+    .swiper-container {
+        height: 55vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .anime-info {
+        font-size: 0.4em;
+        height: 40%;
+    }
+
+    .swiper-container {
+        height: 65vw;
+    }
 }
 
 .anime-img {
@@ -240,42 +288,48 @@ hr {
     padding: 2em 0 2em 0;
 }
 
-/*.site-footer p {*/
-/*    margin-right: 2.5em;*/
-/*}*/
-
 /* REGISTER AND LOGIN PAGE STYLES */
-
 .register-main {
     margin-bottom: 8em;
 }
 
+.login-main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.form-container {*/
+/*    position: relative;*/
+/*    right: 1em;*/
+/*    height: 100%;*/
+/*    text-align: center;*/
+/*    margin: 7.1em auto;*/
+/*    !*margin-bottom: 10em;*!*/
+/*    background-color: #182424;*/
+/*    opacity: 0.6;*/
+/*    max-width: 40%;*/
+/*    border-radius: 0.2em;*/
+/*    border: 1px solid #2e9e9e;*/
+/*    overflow: hidden;*/
+/*}*/
+
 .form-container {
-    position: relative;
-    right: 1em;
-    height: 100%;
-    text-align: center;
-    margin: 7.1em auto;
-    /*margin-bottom: 10em;*/
-    background-color: #182424;
-    opacity: 0.6;
-    max-width: 40%;
-    border-radius: 0.2em;
-    border: 1px solid #2e9e9e;
-    overflow: hidden;
-}
-
-.form-description {
-    font-size: 30px;
-    padding-top: 1.5em;
-}
-
-.form {
-    height: 70%;
     display: flex;
     flex-direction: column;
+    max-height: 100%;
+    max-width: 70%;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 1em;
+    border-radius: 0.2em;
+    border: 1px solid #2e9e9e;
+}
+
+.add-anime-form-container {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    /*max-width: 50%;*/
 }
 
 .form-redirect {
@@ -288,10 +342,30 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
+}
+
+/*.form-redirect button a {*/
+/*    width: 100%;*/
+/*}*/
+
+.form-description {
+    font-size: 30px;
+    padding-top: 1.5em;
+}
+
+.form {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
 }
 
 .submit-form:hover {
     background-color: #2e9e9e;
+    cursor: pointer;
     color: #020303;
 }
 
@@ -332,8 +406,8 @@ button:focus {
 .input-field {
     color: #2e9e9e;
     box-sizing: border-box;
-    width: 25em;
-    max-width: 75%;
+    width: 80%;
+    max-width: 80%;
     text-align: center;
     border-radius: 0.2em;
     border: none;
@@ -372,7 +446,8 @@ small {
 /*ANIME PAGE STYLES*/
 
 .anime-page-main {
-    width: 1080px;
+    /*max-width: 1080px;*/
+    max-width: 90vw;
     margin: 5em auto;
 }
 
@@ -387,11 +462,12 @@ small {
 }
 
 .seasons-container {
-    margin-top: 3em;
+    max-width: 90%;
+    margin: 3em auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .season,
@@ -441,6 +517,7 @@ small {
 }
 
 .anime-page-title {
+    text-align: center;
     color: #2e9e9e;
     margin: 1em auto;
     letter-spacing: 2px;
@@ -450,12 +527,13 @@ small {
 /*TODO palyer page includet here !!!*/
 .season-page-main,
 .player-page-main {
-    width: 58em;
+    max-width: 58em;
     margin: 2em auto;
 }
 
 .anime-info-container {
-    height: 30em;
+    max-width: 90%;
+    min-height: 30em;
     padding-bottom: 0;
 }
 
@@ -474,8 +552,8 @@ small {
     filter: brightness(50%);
 }
 
-.anime-img-container {
-    height: 45%;
+.season-page-main .anime-img-container {
+    height: 15em;
 }
 
 .img-container {
@@ -541,7 +619,7 @@ small {
 
 .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -552,14 +630,12 @@ small {
 
 .anime-page-main,
 .player-page-main {
-    margin-top: 5em;
-    /*width: 58em;*/
     margin: 2em auto;
 }
 
 .episode-details {
-    width: 100%;
-    height: 25em;
+    width: 90%;
+    min-height: 25em;
     margin: 0 auto;
     overflow: hidden;
     background-color: #414f4f;
@@ -599,7 +675,7 @@ small {
 
 .episode-img-container {
     width: 100%;
-    height: 65%;
+    height: 15em;
     border-radius: 0.2em;
     overflow: hidden;
 }
@@ -622,15 +698,19 @@ small {
 
 .forms-inputs-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    /*margin: 0 auto;*/
 }
 
 .anime-form {
-    margin: 0 2em;
+    margin: 0 auto;
 }
 
 
 .player-container {
-    width: 100%;
+    width: 90%;
     height: 32.7em;
     margin: 5em auto;
     border-radius: 0.5em;
@@ -648,12 +728,14 @@ small {
 
 /* COMMENTS STYLES */
 .comments-wrapper {
+    width: 90%;
     background-color: #414f4f;
     display: flex;
     flex-direction: column;
     border-radius: 0.2em;
     padding: 1em;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .leave-comment-wrapper {
@@ -747,11 +829,18 @@ small {
 }
 
 /*ALL USERS PAGE*/
+@media screen and (max-width: 720px){
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+}
+
 .all-users-container {
     display: flex;
     flex-direction: column;
     margin: 4em auto;
-    width: 80em;
+    max-width: 80em;
+    min-height: 100vh;
 }
 
 .all-users-container h2 {
@@ -764,11 +853,6 @@ small {
     width: 100%;
     text-align: center;
     border-spacing: 0;
-}
-
-.all-users-container table thead th {
-    color: black;
-    font-size: 18px;
 }
 
 .user-promote,
@@ -807,7 +891,7 @@ small {
 }
 
 .all-users-err-msg {
-    width: 80%;
+    max-width: 80%;
     padding: 0.5em;
     text-align: center;
     margin: 3em auto;
@@ -835,11 +919,12 @@ small {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /*height: 6em;*/
+    text-align: center;
     min-height: 6em;
     color: #9c975f;
     margin-top: 1em;
     margin-bottom: 1em;
+    max-width: 95%;
 }
 
 .all-animes-header .search-bar {
@@ -854,7 +939,7 @@ small {
     flex-direction: column;
     /*justify-content: center;*/
     align-items: center;
-    width: 90em;
+    /*width: 90em;*/
     max-width: 90em;
     margin: 3em auto;
 }
@@ -864,7 +949,8 @@ small {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
+    justify-content: center;
     align-items: center;
 }
 
@@ -929,13 +1015,16 @@ small {
 
 /*INDEX PAGE STYLES*/
 .index-title {
-    margin-top: 2em;
+    max-width: 90%;
+    margin: 2em auto;
     color: #9c975f;
 }
 
 .index-main {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    /*width: 100vw;*/
 }
 
 .join-link {
@@ -1006,13 +1095,15 @@ small {
 .about-us-content {
     margin-top: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
 .about-us-content p {
+    margin: 1em;
     width: 20em;
-    height: 10em;
+    min-height: 10em;
     background-color: #414f4f;
     padding: 1.5em;
     border-radius: 0.3em;

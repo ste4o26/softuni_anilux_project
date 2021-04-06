@@ -54,7 +54,7 @@ class HomeControllerTest extends BaseTest {
         anime1.setSummary("Some summery just in case...");
         anime1.setImageThumbnailUrl("/img/2.jpg");
         anime1.setReleaseDate(LocalDate.of(2021, 3, 20));
-        anime1.setCompleted(false);
+//        anime1.setCompleted(false);
         anime1.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         anime1.setLikes(18);
         anime1.setGenres(Set.of(genre));
@@ -66,7 +66,7 @@ class HomeControllerTest extends BaseTest {
         anime2.setSummary("Some summery just in case...");
         anime2.setImageThumbnailUrl("/img/2.jpg");
         anime2.setReleaseDate(LocalDate.of(2020, 8, 15));
-        anime2.setCompleted(false);
+//        anime2.setCompleted(false);
         anime2.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         anime2.setLikes(3);
         anime2.setGenres(Set.of(genre));

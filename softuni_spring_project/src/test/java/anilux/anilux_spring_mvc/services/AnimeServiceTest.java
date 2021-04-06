@@ -46,7 +46,7 @@ class AnimeServiceTest extends BaseTest {
         anime.setSummary("Some summery just in case...");
         anime.setImageThumbnailUrl("/img/2.jpg");
         anime.setReleaseDate(LocalDate.of(2021, 1, 27));
-        anime.setCompleted(false);
+//        anime.setCompleted(false);
         anime.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         Genre genre = new Genre();
         genre.setName("Shounen");
@@ -163,7 +163,7 @@ class AnimeServiceTest extends BaseTest {
         anime3.setSummary("Some summery just in case...");
         anime3.setImageThumbnailUrl("/img/2.jpg");
         anime3.setReleaseDate(LocalDate.of(2021, 3, 20));
-        anime3.setCompleted(false);
+//        anime3.setCompleted(false);
         anime3.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         anime3.setLikes(18);
         anime3.setGenres(Set.of(genre));
@@ -179,7 +179,7 @@ class AnimeServiceTest extends BaseTest {
         anime2.setSummary("Some summery just in case...");
         anime2.setImageThumbnailUrl("/img/2.jpg");
         anime2.setReleaseDate(LocalDate.of(2020, 8, 15));
-        anime2.setCompleted(false);
+//        anime2.setCompleted(false);
         anime2.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         anime2.setLikes(3);
         anime2.setGenres(Set.of(genre));

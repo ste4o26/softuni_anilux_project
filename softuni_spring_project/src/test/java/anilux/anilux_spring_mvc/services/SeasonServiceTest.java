@@ -43,7 +43,7 @@ class SeasonServiceTest extends BaseTest {
         anime.setSummary("Some summery just in case...");
         anime.setImageThumbnailUrl("/img/2.jpg");
         anime.setReleaseDate(LocalDate.of(2021, 1, 27));
-        anime.setCompleted(false);
+//        anime.setCompleted(false);
         anime.setTrailerUrl("https://www.youtube.com/embed/k4iTICgLOtw");
         Genre genre = new Genre();
         genre.setName("Shounen");

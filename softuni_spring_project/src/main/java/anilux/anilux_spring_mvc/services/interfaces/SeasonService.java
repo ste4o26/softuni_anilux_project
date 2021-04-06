@@ -9,4 +9,6 @@ public interface SeasonService {
     SeasonServiceModel delete(Long seasonId);
 
     SeasonServiceModel fetchById(Long id);
+
+    SeasonServiceModel completeById(Long seasonId);
 }

@@ -12,6 +12,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -62,5 +63,12 @@ public class SeasonController {
         SeasonServiceModel seasonServiceModel = this.seasonService.delete(seasonId);
 
         return String.format("redirect:/animes/%d", seasonServiceModel.getAnime().getId());
+    }
+
+    @PreAuthorize("hasRole('ROLE_ROOT_ADMIN') or hasRole('ROLE_ADMIN')")
+    @GetMapping("/complete/{seasonId}")
+    public String completeSeason(@PathVariable("seasonId") Long seasonId) {
+        this.seasonService.completeById(seasonId);
+        return String.format("redirect:/seasons/%d", seasonId);
     }
 }

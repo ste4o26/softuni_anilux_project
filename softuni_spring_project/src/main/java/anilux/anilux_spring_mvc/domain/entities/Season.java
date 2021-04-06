@@ -15,6 +15,9 @@ public class Season extends BaseEntity {
     @Column(name = "number", nullable = false)
     private Integer number;
 
+    @Column(name = "is_completed", nullable = false)
+    private boolean isCompleted;
+
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToOne(targetEntity = Anime.class)
