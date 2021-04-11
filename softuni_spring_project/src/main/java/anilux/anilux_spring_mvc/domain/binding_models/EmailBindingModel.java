@@ -12,7 +12,6 @@ import javax.validation.constraints.Size;
 @Data
 public class EmailBindingModel {
 
-    //TODO make it work
     @NotNull
     @Size(min = 15, message = "Feedback must be at least 15 characters!")
     private String content;

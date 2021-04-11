@@ -14,6 +14,6 @@ public class GenreBindingModel {
     private Long id;
 
     @NotNull
-    @Size(min = 3, max = 20)
+    @Size(min = 3, max = 20, message = "Genre must be between 3 and 20 characters!")
     private String name;
 }
