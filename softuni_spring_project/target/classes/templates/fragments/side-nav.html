@@ -26,7 +26,7 @@
             <h3 class="sidebar-heading">Account</h3>
             <li sec:authorize="isAnonymous()"><a th:href="@{/users/register}">Sign Up</a></li>
             <li sec:authorize="isAnonymous()"><a th:href="@{/users/login}">Sign In</a></li>
-            <li sec:authorize="isAuthenticated()"><a href="/contacts/contactUs">Contact Us</a></li>
+            <li><a href="/contacts/contactUs">Contact Us</a></li>
         </th:block>
 
         <th:block sec:authorize="isAuthenticated()">
@@ -34,7 +34,7 @@
                 <hr>
                 <h3 class="sidebar-heading">Admin</h3>
                 <li><a th:href="@{/animes/upload}">Upload Anime</a></li>
-                <li sec:authorize="hasRole('ROLE_ROOT_ADMIN')"><a th:href="@{/users/all}">All Users</a></li>
+                <li><a th:href="@{/users/all}">All Users</a></li>
                 <li><a th:href="@{/genres/upload}">Upload Genre</a></li>
             </th:block>
         </th:block>

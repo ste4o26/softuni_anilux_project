@@ -12,6 +12,7 @@
     <main class="login-main">
         <section class="form-container">
             <p class="form-description">Sign In</p>
+
             <small th:if="${wrongCredentials}">Wrong username or password!</small>
 
             <form th:object="${userLoginBindingModel}" th:action="@{/users/login}" method="POST" class="form">

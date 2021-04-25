@@ -1153,257 +1153,256 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="285" name="is_completed">
+    <column id="298" parent="285" name="likes">
       <Position>3</Position>
-      <DataType>bit(1)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="299" parent="285" name="likes">
-      <Position>4</Position>
       <DataType>int|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="285" name="name">
-      <Position>5</Position>
+    <column id="299" parent="285" name="name">
+      <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="285" name="release_date">
-      <Position>6</Position>
+    <column id="300" parent="285" name="release_date">
+      <Position>5</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="285" name="summary">
-      <Position>7</Position>
+    <column id="301" parent="285" name="summary">
+      <Position>6</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="285" name="trailer_url">
-      <Position>8</Position>
+    <column id="302" parent="285" name="trailer_url">
+      <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="304" parent="285" name="UK_jn6yn40n72vaobhw6rs5nm78n">
+    <index id="303" parent="285" name="UK_jn6yn40n72vaobhw6rs5nm78n">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="305" parent="285" name="PRIMARY">
+    <key id="304" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="306" parent="285" name="UK_jn6yn40n72vaobhw6rs5nm78n">
+    <key id="305" parent="285" name="UK_jn6yn40n72vaobhw6rs5nm78n">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>UK_jn6yn40n72vaobhw6rs5nm78n</UnderlyingIndexName>
     </key>
-    <column id="307" parent="286" name="anime_id">
+    <column id="306" parent="286" name="anime_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="286" name="genre_id">
+    <column id="307" parent="286" name="genre_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="309" parent="286" name="FK3vlhx00jsj7svhp0wekq5itjq">
+    <index id="308" parent="286" name="FK3vlhx00jsj7svhp0wekq5itjq">
       <ColNames>genre_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="310" parent="286" name="PRIMARY">
+    <key id="309" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>anime_id
 genre_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="311" parent="286" name="FKo123uyuwcm27knwlvxhkpvv28">
+    <foreign-key id="310" parent="286" name="FKo123uyuwcm27knwlvxhkpvv28">
       <ColNames>anime_id</ColNames>
       <RefTableName>animes</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="312" parent="286" name="FK3vlhx00jsj7svhp0wekq5itjq">
+    <foreign-key id="311" parent="286" name="FK3vlhx00jsj7svhp0wekq5itjq">
       <ColNames>genre_id</ColNames>
       <RefTableName>genres</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="313" parent="287" name="animes_id">
+    <column id="312" parent="287" name="animes_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="287" name="liked_by">
+    <column id="313" parent="287" name="liked_by">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="315" parent="287" name="FKdo4qi432dqcr33y5d6gm2tygu">
+    <index id="314" parent="287" name="FKdo4qi432dqcr33y5d6gm2tygu">
       <ColNames>animes_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="316" parent="287" name="FKdo4qi432dqcr33y5d6gm2tygu">
+    <foreign-key id="315" parent="287" name="FKdo4qi432dqcr33y5d6gm2tygu">
       <ColNames>animes_id</ColNames>
       <RefTableName>animes</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="317" parent="288" name="id">
+    <column id="316" parent="288" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="288" name="content">
+    <column id="317" parent="288" name="content">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="288" name="episode_id">
+    <column id="318" parent="288" name="episode_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="288" name="user_id">
+    <column id="319" parent="288" name="user_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="321" parent="288" name="FKe1y835b37nm5wwrm2wwoxykhk">
+    <index id="320" parent="288" name="FKe1y835b37nm5wwrm2wwoxykhk">
       <ColNames>episode_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="322" parent="288" name="FK8omq0tc18jd43bu5tjh6jvraq">
+    <index id="321" parent="288" name="FK8omq0tc18jd43bu5tjh6jvraq">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="323" parent="288" name="PRIMARY">
+    <key id="322" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="324" parent="288" name="FKe1y835b37nm5wwrm2wwoxykhk">
+    <foreign-key id="323" parent="288" name="FKe1y835b37nm5wwrm2wwoxykhk">
       <ColNames>episode_id</ColNames>
       <RefTableName>episodes</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="325" parent="288" name="FK8omq0tc18jd43bu5tjh6jvraq">
+    <foreign-key id="324" parent="288" name="FK8omq0tc18jd43bu5tjh6jvraq">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="326" parent="289" name="id">
+    <column id="325" parent="289" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="327" parent="289" name="episode_url">
+    <column id="326" parent="289" name="episode_url">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="289" name="number">
+    <column id="327" parent="289" name="number">
       <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="289" name="release_date">
+    <column id="328" parent="289" name="release_date">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="330" parent="289" name="season_id">
+    <column id="329" parent="289" name="season_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="331" parent="289" name="FK7ivf70l3s8bib2w4765nkhcak">
+    <index id="330" parent="289" name="FK7ivf70l3s8bib2w4765nkhcak">
       <ColNames>season_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="332" parent="289" name="PRIMARY">
+    <key id="331" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="333" parent="289" name="FK7ivf70l3s8bib2w4765nkhcak">
+    <foreign-key id="332" parent="289" name="FK7ivf70l3s8bib2w4765nkhcak">
       <ColNames>season_id</ColNames>
       <RefTableName>seasons</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="334" parent="290" name="id">
+    <column id="333" parent="290" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="290" name="name">
+    <column id="334" parent="290" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="336" parent="290" name="UK_pe1a9woik1k97l87cieguyhh4">
+    <index id="335" parent="290" name="UK_pe1a9woik1k97l87cieguyhh4">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="337" parent="290" name="PRIMARY">
+    <key id="336" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="338" parent="290" name="UK_pe1a9woik1k97l87cieguyhh4">
+    <key id="337" parent="290" name="UK_pe1a9woik1k97l87cieguyhh4">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>UK_pe1a9woik1k97l87cieguyhh4</UnderlyingIndexName>
     </key>
-    <column id="339" parent="291" name="id">
+    <column id="338" parent="291" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="291" name="authority">
+    <column id="339" parent="291" name="authority">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="341" parent="291" name="PRIMARY">
+    <key id="340" parent="291" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="342" parent="292" name="id">
+    <column id="341" parent="292" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="292" name="number">
+    <column id="342" parent="292" name="is_completed">
       <Position>2</Position>
+      <DataType>bit(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="343" parent="292" name="number">
+      <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="344" parent="292" name="anime_id">
-      <Position>3</Position>
+      <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>

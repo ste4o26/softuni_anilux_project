@@ -90,7 +90,6 @@ public class AnimeServiceImpl implements AnimeService {
         animeServiceModel.setCompleted(false);
         animeServiceModel.setLikes(0);
 
-//        TODO move create message logic to the ValidatorUtil class
         if (!this.validatorUtil.isValid(animeServiceModel)) {
             StringBuilder fullErrorMessage = new StringBuilder();
 

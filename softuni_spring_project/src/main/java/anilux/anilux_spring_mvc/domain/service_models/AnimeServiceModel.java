@@ -23,7 +23,6 @@ public class AnimeServiceModel extends BaseServiceModel {
     @NotNull(message = "Image can't be null")
     private String imageThumbnailUrl;
 
-
     private LocalDate releaseDate;
 
     private boolean isCompleted;

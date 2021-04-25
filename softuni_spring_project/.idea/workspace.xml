@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d796b2cc-a92a-49c3-ab51-e1de89b9a268" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anilux/anilux_spring_mvc/domain/binding_models/EmailBindingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anilux/anilux_spring_mvc/domain/binding_models/EmailBindingModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anilux/anilux_spring_mvc/domain/binding_models/GenreBindingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anilux/anilux_spring_mvc/domain/binding_models/GenreBindingModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/side-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/side-nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/side-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/side-nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="d796b2cc-a92a-49c3-ab51-e1de89b9a268" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,12 +34,6 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="anilux: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -68,7 +51,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -91,7 +74,6 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -289,7 +271,12 @@
       <workItem from="1617302490522" duration="165000" />
       <workItem from="1617614467482" duration="18042000" />
       <workItem from="1617740852919" duration="2664000" />
-      <workItem from="1618127162446" duration="1071000" />
+      <workItem from="1618010076328" duration="5000" />
+      <workItem from="1618073515726" duration="948000" />
+      <workItem from="1618127100048" duration="651000" />
+      <workItem from="1618131688037" duration="32000" />
+      <workItem from="1618132676520" duration="934000" />
+      <workItem from="1619344672549" duration="816000" />
     </task>
     <servers />
   </component>
@@ -351,62 +338,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1614885512074" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1615650203282">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1618131716817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615650203282" />
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1618127857470">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618131716817" />
+    <state width="1493" height="263" key="GridCell.Tab.0.bottom" timestamp="1619345293104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618127857470" />
-    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1618127857470">
+    <state width="1493" height="263" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619345293104" />
+    <state width="1493" height="263" key="GridCell.Tab.0.center" timestamp="1619345293104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618127857470" />
-    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1618127857469">
+    <state width="1493" height="263" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619345293104" />
+    <state width="1493" height="263" key="GridCell.Tab.0.left" timestamp="1619345293103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618127857469" />
-    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1618127857470">
+    <state width="1493" height="263" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619345293103" />
+    <state width="1493" height="263" key="GridCell.Tab.0.right" timestamp="1619345293104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618127857470" />
-    <state width="1493" height="266" key="GridCell.Tab.1.bottom" timestamp="1618127857470">
+    <state width="1493" height="263" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619345293104" />
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1619345426984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618127857470" />
-    <state width="1493" height="266" key="GridCell.Tab.1.center" timestamp="1618127857470">
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619345426984" />
+    <state width="1493" height="263" key="GridCell.Tab.1.center" timestamp="1619345426984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618127857470" />
-    <state width="1493" height="266" key="GridCell.Tab.1.left" timestamp="1618127857470">
+    <state width="1493" height="263" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1619345426984" />
+    <state width="1493" height="263" key="GridCell.Tab.1.left" timestamp="1619345426984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618127857470" />
-    <state width="1493" height="266" key="GridCell.Tab.1.right" timestamp="1618127857470">
+    <state width="1493" height="263" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1619345426984" />
+    <state width="1493" height="263" key="GridCell.Tab.1.right" timestamp="1619345426984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618127857470" />
-    <state width="1493" height="263" key="GridCell.Tab.2.bottom" timestamp="1617146146302">
+    <state width="1493" height="263" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1619345426984" />
+    <state width="1493" height="263" key="GridCell.Tab.2.bottom" timestamp="1619345292852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
-    <state width="1493" height="263" key="GridCell.Tab.2.center" timestamp="1617146146302">
+    <state width="1493" height="263" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619345292851" />
+    <state width="1493" height="263" key="GridCell.Tab.2.center" timestamp="1619345292851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
-    <state width="1493" height="263" key="GridCell.Tab.2.left" timestamp="1617146146302">
+    <state width="1493" height="263" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1619345292851" />
+    <state width="1493" height="263" key="GridCell.Tab.2.left" timestamp="1619345292851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
-    <state width="1493" height="263" key="GridCell.Tab.2.right" timestamp="1617146146302">
+    <state width="1493" height="263" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1619345292851" />
+    <state width="1493" height="263" key="GridCell.Tab.2.right" timestamp="1619345292851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1617146146302" />
-    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1617142301669">
+    <state width="1493" height="263" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1619345292851" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1619345312651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1617142301669" />
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1619345312651" />
     <state x="379" y="79" key="Registry" timestamp="1614028238904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -423,10 +410,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1615726396357" />
-    <state x="664" y="303" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1617140229759">
+    <state x="664" y="303" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1619345239040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="664" y="303" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1617140229759" />
+    <state x="664" y="303" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1619345239040" />
     <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog" timestamp="1612294895666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -435,10 +422,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="218" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1616240366097" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1617740852523">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1618131701981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1617740852523" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1618131701981" />
     <state x="536" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617050655115">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -447,10 +434,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="329" y="149" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1616324543622" />
-    <state x="462" y="10" width="611" height="804" key="find.popup" timestamp="1618127723857">
+    <state x="462" y="10" width="611" height="804" key="find.popup" timestamp="1617743132093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="462" y="10" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1618127723857" />
+    <state x="462" y="10" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1617743132093" />
     <state x="209" y="115" key="new project wizard" timestamp="1613073478876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -459,10 +446,31 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1617630853710" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618128177796">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1619345248468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618128177796" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1619345248468" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/anilux/anilux_spring_mvc/web/controllers/AnimeController.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/anilux/anilux_spring_mvc/services/AnimeServiceImpl.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/anilux/anilux_spring_mvc/services/SeasonServiceImpl.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/anilux_rest_api$All_in_anilux_rest_api.ic" NAME="All in anilux-rest-api Coverage Results" MODIFIED="1617743475582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

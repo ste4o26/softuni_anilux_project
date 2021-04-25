@@ -53,6 +53,7 @@ public class SeasonServiceImpl implements SeasonService {
         }
 
         season.setAnime(anime);
+        season.setCompleted(false);
         season.setEpisodes(new HashSet<>());
 
         this.seasonRepository.saveAndFlush(season);
